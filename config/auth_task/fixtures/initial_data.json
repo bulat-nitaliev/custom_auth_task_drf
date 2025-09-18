@@ -1,0 +1,27 @@
+[
+{
+    "model": "auth_task.BusinessElement",
+    "pk": 1,
+    "fields": {"name": "users", "description": "User management"}
+},
+{
+    "model": "auth_task.Role",
+    "pk": 1,
+    "fields": {"name": "admin", "description": "Administrator with full access"}
+},
+{
+    "model": "auth_task.AccessRule",
+    "pk": 1,
+    "fields": {
+        "role": 1,
+        "element": 1,
+        "read_permission": true,
+        "read_all_permission": true,
+        "create_permission": true,
+        "update_permission": true,
+        "update_all_permission": true,
+        "delete_permission": true,
+        "delete_all_permission": true
+    }
+}
+]
